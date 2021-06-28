@@ -1,0 +1,237 @@
+{
+	"home": {
+		"header": [
+			"Experiencia Kent",
+			"Dra. Veronica Carca",
+			"Motivos de consulta",
+			"¿Qué querés mejorar?",
+			"Preguntas frecuentes",
+			"¡Seguinos en Instagram!",
+			"¿Dónde estamos?"
+		],
+		"hero": [{
+			"id": 1,
+			"title": "<span>Experiencia</span><span>Kent</span>",
+			"description": "Un espacio dedicado a la Medicina Estética, Endocrinología y Metabolismo."
+		}],
+		"bienvenidosAKent": {
+			"title": "¿Qué hacemos?",
+			"description": "Realizamos tratamientos faciales y capilares, con especialización en inyectables. Cada caso, se analiza de forma personalizada en una consulta médica SIN COSTO, para luego llevar adelante el procedimiento apropiado conforme a tus necesidades y expectativas.<br /><i>\r\n\"En Kent nos gusta lo auténtico, el ambiente relajado y la empatía de alto grado\".\r\n</i>"
+		},
+		"DraVeroCasca": {
+			"title": "<small>Las manos:</small>Dra. Verónica Carca",
+			"matricula" : "M.N. 135509",
+			"description": "Especialista en Medicina Estética, Endocrinología y Metabolismo. Actualmente, me encuentro realizando la especialidad en Medicina del Deporte, con el objetivo de sumar conocimientos, que me permitan brindar el mejor y más completo tratamiento.",
+			"image": "img1.jpg"
+		},
+		"motivosDeConsulta": {
+			"title": "Motivos de consulta",
+			"consultas": [
+				"Me aparecieron surcos en el rostro",
+				"Noto la piel envejecida y sin volumen",
+				"Tengo arrugas profundas",
+				"En la cara me salieron manchas, y tengo poros dilatados",
+				"Se me marcan mucho las líneas de expresión",
+				"Aumenté de peso",
+				"Se me cae mucho el pelo",
+				"Quiero que mis labios tengan más volumen",
+				"No me gusta mi nariz"
+			]
+		},
+		"tratamientos": {
+			"title": "<small>¿Qué querés</small>mejorar?",
+			"filters": [
+				"facial",
+				"capilar",
+				"endocrinología"
+			],
+			"treatments": [
+				{
+					"id": 1,
+					"filters": [
+						"facial"
+					],
+					"description": "Relleno de fosa temporal con acido hialurónico/ Fox eyes / Técnica B up.",
+					"position": [30, 42]
+				},
+				{
+					"id": 2,
+					"filters": [
+						"facial"
+					],
+					"description": "Arrugas perioculares. Toxina botulínica.",
+					"position": [45, 44]
+				},
+				{
+					"id": 3,
+					"filters": [
+						"facial"
+					],
+					"description": "Tratamiento de ojeras. Relleno con acido hialurónico/ peeling / Harmony pro / hilos PDO.",
+					"position": [48, 58]
+				},
+				{
+					"id": 4,
+					"filters": [
+						"facial"
+					],
+					"description": "Rinomodelación con acido hialurónico.",
+					"position": [59, 80]
+				},
+				{
+					"id": 5,
+					"filters": [
+						"facial"
+					],
+					"description": "Arrugas entrecejo. Toxina botulínica.",
+					"position": [38, 80]
+				},
+				{
+					"id": 6,
+					"filters": [
+						"facial"
+					],
+					"description": "Arrugas frontales. Toxina botulínica.",
+					"position": [27, 78]
+				},
+				{
+					"id": 7,
+					"filters": [
+						"capilar",
+						"endocrinología"
+					],
+					"description": "Tratamiento capilar. Mesoterapia/ Plasma rico/ Dermapen.",
+					"position": [12, 95]
+				},
+				{
+					"id": 8,
+					"filters": [
+						"facial"
+					],
+					"description": "Relleno de pómulos con acido hialurónico. Proyección anterior/ lifteo.",
+					"position": [56, 45]
+				},
+				{
+					"id": 9,
+					"filters": [
+						"facial"
+					],
+					"description": "Relleno de mentón con acido hialurónico (AH).",
+					"position": [84, 73]
+				},
+				{
+					"id": 10,
+					"filters": [
+						"facial"
+					],
+					"description": "Relleno de labios con AH. Perfilado de labios. Volumen de labios.",
+					"position": [73, 74]
+				},
+				{
+					"id": 11,
+					"filters": [
+						"facial"
+					],
+					"description": "Relleno de surco nasogeniano con AH.",
+					"position": [66, 91]
+				},
+				{
+					"id": 12,
+					"filters": [
+						"facial"
+					],
+					"description": "Relleno de arrugas peribucales con AH.",
+					"position": [67, 68]
+				},
+				{
+					"id": 13,
+					"filters": [
+						"facial"
+					],
+					"description": "Relleno de surco labiomentoniano con AH / hilos de PDO.",
+					"position": [74, 53]
+				},
+				{
+					"id": 14,
+					"filters": [
+						"facial"
+					],
+					"description": "Definición del contorno mandibular. AH/ Radiesse/ Hilos de PDO",
+					"position": [71, 39]
+				},
+				{
+					"id": 15,
+					"filters": [
+						"facial",
+						"endocrinología"
+					],
+					"description": "Calidad de piel y manchas.Dermapen/ Plasma rico/ peeling/ Harmony pro / mesoterapia/ Radiesse.",
+					"position": [54, 98]
+				}
+			]
+		},
+		"faqs": {
+			"title": "<small>Preguntas</small>frecuentes",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ex nec sem congue, quis rhoncus sapien tincidunt. In ex magna, ullamcorper at dui sed, commodo tincidunt dolor.",
+			"questions": [{
+					"question": "¿Los tratamientos que realizan, implican cirugía?",
+					"answer": "No. Todos los tratamientos que realizamos son mínimamente invasivos y no requieren intervenciones quirúrgicas. Tampoco llevan tiempo de recuperación, por lo que vas a poder continuar con tu vida normalmente."
+				},
+				{
+					"question": "¿Cómo implementan el protocolo Covid-19?",
+					"answer": "Los turnos son programados con anterioridad, para que en el consultorio sólo se encuentre el profesional y el paciente. A su vez, contamos con un ambiente con posibilidad de realizar ventilación cruzada, lavado de manos y disposición permanente de alcohol en gel."
+				},
+				{
+					"question": "¿Los tratamientos son costosos?",
+					"answer": "El precio de los tratamientos es variado, pero en todos los casos la Dra. va a asesorarte de forma personalizada, teniendo en cuenta la complejidad del caso y tu presupuesto. En Kent, te ofrecemos un lugar seguro, profesional y confiable, donde las marcas utilizadas son importadas y altamente avaladas."
+				},
+				{
+					"question": "¿Formas de pago?",
+					"answer": "Podés pagar tus tratamientos en efectivo, mediante transferencia bancaria, débito o con tarjeta de crédito en 1 o 3 cuotas sin interés."
+				}
+			]
+		},
+		"feed": {
+			"title": "¡Seguinos en Instagram!",
+			"images": [
+				"feed01.png",
+				"feed02.png",
+				"feed03.png",
+				"feed04.png"
+			]
+		},
+		"location": {
+			"title": "<small>¿Dónde</small>estamos?",
+			"description": "Av. Libertador 7820 - Nuñez, Buenos Aires (1425), Argentina",
+			"coords" : {
+				"lat": -34.54252915694709,
+				"lng": -58.46239907492927
+			}
+		},
+		"labs": [
+			"botox-logo.png",
+			"belotero-logo.png",
+			"mesoestetic-logo.png",
+			"vip-logo.png"
+		],
+		"contact": {
+			"title": "Contáctanos también por:",
+			"socials": [{
+					"img": "/mail.svg",
+					"text": "Mail",
+					"link": "mailto:veronica.carca@outlook.com"
+				},
+				{
+					"img": "/wp.svg",
+					"text": "Whatsapp",
+					"link": "https://wa.me/541131317014/?text=Hola Dra. Verónica, me gustaría recibir más información sobre sus tratamientos"
+				},
+				{
+					"img": "/in.svg",
+					"text": "Instagram",
+					"link": "https://www.instagram.com/dra.veronicacarca/"
+				}
+			]
+		}
+	}
+}

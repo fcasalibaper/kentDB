@@ -1,0 +1,22 @@
+{
+  "name": "kentDB",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcasalibaper/kentDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fcasalibaper/kentDB/issues"
+  },
+  "homepage": "https://github.com/fcasalibaper/kentDB#readme"
+}
