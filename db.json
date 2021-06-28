@@ -172,7 +172,7 @@
 		},
 		"faqs": {
 			"title": "<small>Preguntas</small>frecuentes",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ex nec sem congue, quis rhoncus sapien tincidunt. In ex magna, ullamcorper at dui sed, commodo tincidunt dolor.",
+			"description": "Les dejamos información acerca de las consultas que más nos realizan.",
 			"questions": [{
 					"question": "¿Los tratamientos que realizan, implican cirugía?",
 					"answer": "No. Todos los tratamientos que realizamos son mínimamente invasivos y no requieren intervenciones quirúrgicas. Tampoco llevan tiempo de recuperación, por lo que vas a poder continuar con tu vida normalmente."
