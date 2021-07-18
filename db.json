@@ -16,7 +16,7 @@
 		}],
 		"bienvenidosAKent": {
 			"title": "¿Qué hacemos?",
-			"description": "Realizamos tratamientos faciales y capilares, con especialización en inyectables. Cada caso, se analiza de forma personalizada en una consulta médica <b>sin costo</b>, para luego llevar adelante el procedimiento apropiado conforme a tus necesidades y expectativas.<br /><br /><i>\r\n\"En Kent nos gusta lo auténtico, el ambiente relajado y la empatía de alto grado\".\r\n</i>"
+			"description": "Realizamos tratamientos faciales y capilares, con especialización en inyectables. Cada caso, se analiza de forma personalizada en una consulta médica, para luego llevar adelante el procedimiento apropiado conforme a tus necesidades y expectativas.<br /><br /><i>\r\n\"En Kent nos gusta lo auténtico, el ambiente relajado y la empatía de alto grado\".\r\n</i>"
 		},
 		"DraVeroCasca": {
 			"title": "<small>Las manos:</small>Dra. Verónica Carca",
@@ -43,13 +43,16 @@
 			"filters": [
 				"facial",
 				"capilar",
-				"endocrinología"
+				"endocrinología",
+				"armonización facial",
+				"arrugas de expresión"
 			],
 			"treatments": [
 				{
 					"id": 1,
 					"filters": [
-						"facial"
+						"facial",
+						"armonización facial"
 					],
 					"description": "Relleno de fosa temporal con ácido hialurónico/ Fox eyes / Técnica B up.",
 					"position": [30, 42]
@@ -57,7 +60,8 @@
 				{
 					"id": 2,
 					"filters": [
-						"facial"
+						"facial",
+						"arrugas de expresión"
 					],
 					"description": "Arrugas perioculares. Toxina botulínica.",
 					"position": [45, 44]
@@ -81,7 +85,8 @@
 				{
 					"id": 5,
 					"filters": [
-						"facial"
+						"facial",
+						"arrugas de expresión"
 					],
 					"description": "Arrugas entrecejo. Toxina botulínica.",
 					"position": [38, 80]
@@ -89,7 +94,8 @@
 				{
 					"id": 6,
 					"filters": [
-						"facial"
+						"facial",
+						"arrugas de expresión"
 					],
 					"description": "Arrugas frontales. Toxina botulínica.",
 					"position": [27, 78]
@@ -106,7 +112,8 @@
 				{
 					"id": 8,
 					"filters": [
-						"facial"
+						"facial",
+						"armonización facial"
 					],
 					"description": "Relleno de pómulos con ácido hialurónico. Proyección anterior/ lifteo.",
 					"position": [56, 45]
@@ -114,7 +121,8 @@
 				{
 					"id": 9,
 					"filters": [
-						"facial"
+						"facial",
+						"armonización facial"
 					],
 					"description": "Relleno de mentón con ácido hialurónico (AH).",
 					"position": [84, 73]
@@ -154,7 +162,8 @@
 				{
 					"id": 14,
 					"filters": [
-						"facial"
+						"facial",
+						"armonización facial"
 					],
 					"description": "Definición del contorno mandibular. AH/ Radiesse/ Hilos de PDO.",
 					"position": [71, 39]
