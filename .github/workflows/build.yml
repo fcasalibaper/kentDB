@@ -1,0 +1,95 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  avoid_reduncy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel previous Redundant builds
+        uses: rokroskar/workflow-run-cleanup-action@master
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+  quality-check:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          token: ${{ github.token }}
+
+      - name: Install Yarn 🔧
+        run: npm install -g yarn
+
+      # Install and build the Storybook files (build for package)
+      # - name: Install dependencies 🔧
+      #   run: yarn --frozen-lockfile
+
+      # - name: test - Storybook 🔧
+      #   run: yarn test
+
+      # Get coverage
+      # - name: Upload code coverage to Codacy
+      #   env:
+      #     CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+      #   run: bash <(curl -Ls https://coverage.codacy.com/get.sh)
+
+  semantic-and-release:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: [quality-check]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          token: ${{ github.token }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Install Yarn 🔧
+        run: npm install -g yarn
+
+      # Install and build the Storybook files (build for package)
+      # - name: Install dependencies 🔧
+      #   run: yarn --frozen-lockfile
+
+      # - name: build - Storybook 🔧
+      #   run: yarn build
+
+      # Semantic Release
+      # - name: Semantic Release
+      #   uses: cycjimmy/semantic-release-action@v3
+      #   id: semantic # Need an `id` for output variables (the following jobs need to know the release status)
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN_KENTDB }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # - name: Copy on dist/ folder new package.json with version updated
+      #   run: yarn postbuild
+
+      # # Setup node registry params for NPM package release
+      # - name: Setup .npmrc file to publish to GitHub Packages
+      #   if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request' && steps.semantic.outputs.new_release_published == 'true'
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 14
+      #     registry-url: https://npm.pkg.github.com
+      #     scope: '@zxventures'
+          
+      # - name: Publish package
+      #   if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request' && steps.semantic.outputs.new_release_published == 'true'
+      #   run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

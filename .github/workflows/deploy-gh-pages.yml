@@ -1,0 +1,44 @@
+name: Gh-pages
+
+on:
+  workflow_run:
+    workflows: [Build]
+    types: [completed]
+
+jobs:
+  avoid_reduncy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel previous Redundant builds
+        uses: rokroskar/workflow-run-cleanup-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_KENTDB }}
+
+  deploy-on-github-pages: 
+    name: Deploy gh-pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          token: ${{secrets.GH_TOKEN_KENTDB}}
+
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      # Install and build the Storybook files (build UI storybook)
+      - name: Install dependencies and build - Storybook 🚀
+        run: |
+          yarn install --frozen-lockfile
+          yarn build-storybook
+
+      # Deploy github
+      - name: Deploy on GitHub pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: storybook-static
+          token: ${{ github.token }}
