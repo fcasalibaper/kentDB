@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   avoid_reduncy:
@@ -73,7 +73,7 @@ jobs:
       #   uses: cycjimmy/semantic-release-action@v3
       #   id: semantic # Need an `id` for output variables (the following jobs need to know the release status)
       #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN_KENTDB }}
       #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # - name: Copy on dist/ folder new package.json with version updated

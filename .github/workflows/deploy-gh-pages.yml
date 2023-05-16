@@ -12,7 +12,7 @@ jobs:
       - name: Cancel previous Redundant builds
         uses: rokroskar/workflow-run-cleanup-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_KENTDB }}
 
   deploy-on-github-pages: 
     name: Deploy gh-pages
@@ -24,7 +24,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-          token: ${{secrets.GH_TOKEN}}
+          token: ${{secrets.GH_TOKEN_KENTDB}}
 
       - name: Install Yarn
         run: npm install -g yarn
